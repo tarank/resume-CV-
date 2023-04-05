@@ -1,0 +1,118 @@
+
+#menu {
+    float: left;
+    width: 77%;
+}
+#order_table {
+    float: right;
+    width: 22%;
+    margin-bottom: 2%; 
+}
+h2, h4 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+/* Menu */
+#menu > h4 {
+    display: inline;
+}
+.menu_label {
+    width: 33.33%;
+    box-sizing: border-box;
+   
+    display: inline;
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    float: left;
+    background-color: lightgray;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px 1px 0 1px;
+    border-radius: 5px 5px 0 0;
+    transition: background-color 0.5s ease;
+}
+.menu_label:hover {
+    background-color: white;
+}
+.menu_tab {
+    display: none;
+}
+.menu_tab > form {
+    display: inline;
+    width: 33.33%;
+    text-align: left;
+    float: left;
+  
+}
+#hotel_label:hover ~ #hotel_tab,
+#hotel_tab:hover {
+    display: inline-block;
+    box-sizing: border-box;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+}
+form img {
+    float: left;
+    width: 40%;
+    height: auto;
+    margin-right: 1%;
+}
+form input {
+    width: 40%;
+    display: block; 
+}
+#ticket_label:hover ~ #ticket_tab,
+#ticket_tab:hover {
+    display: inline-block;
+    box-sizing: border-box;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+#dining_label:hover ~ #dining_tab,
+#dining_tab:hover {
+    display: inline-block;
+    box-sizing: border-box;
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+}
+
+
+
+/* Table */
+table {
+    width: 100%;
+}
+#order_table > h2, h2 + h4, caption {
+    text-align: center;
+}
+th, td {
+    background-color: lightgray;
+}
+.description {
+    width: 70%;
+    text-align: left;
+}
+.quantity {
+    width: 30%;
+    text-align: right;
+}
+/* #total {
+    text-align: right;
+} */
+
+/* Table - Undo */
+#undo {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+#undo:visited {
+    color: black;
+}

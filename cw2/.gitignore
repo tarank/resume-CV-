@@ -1,0 +1,9 @@
+# Provided Material
+_*/
+*.pdf
+
+# Scripts
+*.py
+
+# Packages
+*.zip

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- this file is at /html/ while homepage is at / -->
+<!-- all file links should begin with ../ -->
+<head>
+  <meta charset="utf-8">
+  <meta name="taran" content="Heijitsu">
+  <meta name="description" content="This is an additional free format Web page for you to acknowledge the sources of information used in your design. If you use images, icon or text obtained from the Internet, write the source and links in this page. " >
+  <meta name="keywords" content="design,name,acknowledgement">
+  <link rel="stylesheet" href="../css/design.css" media="all" type="text/css">
+  <link rel="stylesheet" href="../css/navigation.css" media="screen" type="text/css">
+  <title>Design Page</title>
+</head>
+<body>
+
+  <!-- navigation bar -->
+  <nav>
+    <img src="../images/compass.png" alt="Navigation" class="nav_icon">
+    <ul class="nav_menu">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="./order.html">Order</a></li>
+      <li><a href="./design.html">About Us</a></li>
+    </ul>
+  </nav>
+
+  <div id="design">
+    <h2>Design</h2>
+    <p>Name: Taran</p>
+    <p>SID: tkaranth2</p>
+    <div id="css_design">
+      <h3>CW2</h3>
+      <h4>Position Scheme</h4>
+      <p>This website use a combination of positioning to better fit the content.</p>
+      <p>majority use same <span class="code">static</span> positioning.</p>
+      <p>Breif explanation of website:</p>
+      <dl>
+        <dt><span class="code">relative</span> positioning</dt>
+          <dd>
+            <ul>
+              <li>
+                the navigation menu, a child of <span class="code">nav</span>, is positioned lower (relative to its original place) to ensure it is not covered by the navigation icon.
+                (<span class="code">navigation.css</span>, Line 17)
+              </li>
+              <li>
+                the <span class="code">form</span> in home page is set to <span class="code">relative</span> to serve as positioning ancestor for the <span class="code">input</span> and <span class="code">select</span>.
+                (see the next item, <span class="code">homepage.css</span>, Line 81)
+              </li>
+            </ul>
+          </dd>
+        <dt><span class="code">absolute</span> positioning</dt>
+          <dd>
+            the form <span class="code">input</span> and <span class="code">select</span> in home page is positioned with 10% right empty space (relative to the form) to be aligned vertically.  This also takes the elements out of normal flow.
+            (<span class="code">homepage.css</span>
+          </dd>
+        <dt><span class="code">fixed</span> positioning</dt>
+          <dd>
+            the <span class="code">nav</span> class and the navigation icon is fixed to the top right corner of the browser body. This also takes the elements out of normal flow.
+            (<span class="code">navigation.css</span>
+          </dd>
+      </dl>
+
+      <h4>CSS3 Features</h4>
+      <p>Many CSS3 features are introduced in this website, including but not limited to:</p>
+      <dl>
+        <dt><span class="imp">Round Corner</span></dt>
+          <dd>
+            <ul>
+              <li>
+                <span class="code">border-radius</span> is used to create round corner for many <span class="code">div</span> elements.
+                (<span class="code">default.css</span>, Line 6, 10)
+              </li>
+              <li>
+                <span class="code">border-radius</span> is also used for <span class="code">menu_label</span> in order page, with only topleft and topright corner rounded.
+                (<span class="code">order.css</span>, Line 36)
+              </li>
+            </ul>
+          </dd>
+        <dt><span class="imp">Box Shadow</span></dt>
+          <dd>
+            <span class="code">box-shadow</span> is used to decorate the form in the homepage.
+            (<span class="code">homepage.css</span>, Line 82)
+          </dd>
+        <dt><span class="imp">Transitions</span></dt>
+          <dd>
+            <ul>
+              <li>
+                <span class="code">transition</span> is used to create a color and background color change effect when the mouse hovers over an item in the navigation menu.
+                (<span class="code">navigation.css</span>
+              </li>
+              <li>
+                A similar effect (background color change) is applied for the <span class="code">menu_label</span> in order page.
+                (<span class="code">order.css</span>
+              </li>
+            </ul>
+          </dd>
+        <dt><span class="imp">Animations</span></dt>
+          <dd>
+            <ul>
+              <li>
+                When the page is loaded, <span class="code">animation</span> makes the navigation icon flys in with rotation, and then rotate for another 360 degrees.
+                (<span class="code">default.css</span>
+              </li>
+              <li>
+                At the same time, the navigation menu fades in.
+                (<span class="code">default.css</span>
+              </li>
+            </ul>
+          </dd>
+      </dl>
+
+      <h4>Style grouping</h4>
+      <p>All the CSS content is grouped into 6 files in the <span class="code">/css</span> folder, and HTML files are linked to them.</p>
+      <p>No inline or embedded style is used in this website.</p>
+      <p>The files are:</p>
+      <dl>
+        <dt><span class="code">default.css</span></dt>
+          <dd>
+            the common theme across the site, for <span class="code">index.html</span> and <span class="code">order.html</span> (on screen).<br>
+            Including the <span class="imp">header and welcome</span> <span class="imp">footer</span>  and <span class="imp">border style</span> 
+          </dd>
+        <dt><span class="code">navigation.css</span></dt>
+          <dd>
+            navigation style, for all pages (on screen, that is, will be hidden in print).<br>
+            Including the <span class="imp">navigation icon</span> <span class="imp">navigation menu</span>  and <span class="imp">keyframe functions</span> 
+          </dd>
+        <dt><span class="code">homepage.css</span></dt>
+          <dd>
+            specific style for <span class="code">index.html</span>.<br>
+            Including the <span class="imp">two-column layout</span> , <span class="imp">information block</span> , <span class="imp">promotion block</span><span class="imp">booking block</span> 
+          </dd>
+        <dt><span class="code">order.css</span></dt>
+          <dd>
+            specific style for <span class="code">order.html</span> (on screen).<br>
+            Including the <span class="imp">two-column layout</span> , <span class="imp">order menu</span>  and <span class="imp">ordered item</span> 
+          </dd>
+        <dt><span class="code">printOrder.css</span></dt>
+          <dd>
+            specific style for printing the <span class="code">order.html</span>.<br>
+            All the blocks other than the <span class="imp">header and ordered item</span> are not displayed.<br>
+            These two blocks are also adjusted to fit the print width. Header , ordered item .
+          </dd>
+        <dt><span class="code">design.css</span></dt>
+          <dd>
+            specific style for this page, <span class="code">design.html</span>.
+          </dd>
+      </dl>
+      <p>Below is an more detailed explanation of different groups of style for <span class="code">order.html</span>.</p>
+      <dl>
+        <dt>Default theme (header, footer, border style)</dt>
+          <dd>
+            <span class="code">default.css</span>.
+          </dd>
+        <dt>Double column layout</dt>
+          <dd>
+            The order page is divided into order menu and ordered item blocks.<br>
+            <span class="code">order.css</span> Line  arrange them in a double column layout.
+          </dd>
+        <dt>Order menu</dt>
+          <dd>
+            <span class="code">order.css</span>.
+            <ul>
+              <li>
+                Line 99-41 is for the three menu labels ("Tickets", "Dinings" and "Hotels");  specifies the transition of background color when the mouse hovers over the label.
+              </li>
+              <li>
+                Line 42-44 hides the menu tabs.
+              </li>
+              <li>
+                Line 45-64 is for the style of menu tabs when they are displayed.
+              </li>
+              <li>
+                Line 67-94 further specifies the properties (as <span class="code">inline-block</span>) of the menu tabs when they are shown, and more importantly, let them display when the mouse hover over corresponding menu label or on the menu tab.
+              </li>
+            </ul>
+          </dd>
+        <dt>Ordered item table</dt>
+          <dd>
+            <span class="code">order.css</span>.
+            <ul>
+              <li> is for the overall style and the messages outside the table.</li>
+              <li>is for table column width and text alignment.</li>
+              <li> the <span class="code">undo</span> link.</li>
+            </ul>
+          </dd>
+        <dt>Navigation icon and menu</dt>
+          <dd>
+            <span class="code">navigation.css</span>.
+          </dd>
+        <dt>Printed Style</dt>
+          <dd>
+            <span class="code">printOrder.css</span>.
+            
+          </dd>
+      </dl>
+    </div>
+  </div>
+
+  
+</body>
+</html>
